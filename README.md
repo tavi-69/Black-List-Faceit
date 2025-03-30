@@ -8,6 +8,25 @@ BLK (Faceit Blacklist) is a Python application that uses the Faceit API to analy
 2. Extract the files.
 3. Run `BLK.exe`.
 
+## Running from Source
+
+If you don't trust the `.7z` archive, you can run the application from source by following these steps:
+
+1. Ensure you have Python installed. You can download it from [python.org](https://www.python.org/).
+2. Install the required dependencies:
+   ```sh
+   pip install requests pillow python-dotenv
+   ```
+3. Run the script:
+   ```sh
+   python BLK.py
+   ```
+4. If you want to convert the script into an executable, install `pyinstaller` and create the `.exe` file:
+   ```sh
+   pip install pyinstaller
+   pyinstaller --onefile BLK.py
+   ```
+
 ## Usage
 
 1. Enter the Faceit match link.
@@ -23,3 +42,4 @@ BLK (Faceit Blacklist) is a Python application that uses the Faceit API to analy
 
 ## Contact
 For any questions or suggestions, open an issue on GitHub.
+
